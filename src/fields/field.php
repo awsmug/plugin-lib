@@ -646,7 +646,7 @@ if ( ! class_exists( 'Leaves_And_Love\Plugin_Lib\Fields\Field' ) ) :
 		public function validate( $value = null ) {
 			$this->maybe_resolve_dependencies();
 
-			if ( 'false' === $this->display ) {
+			if ( false === $this->display ) {
 				return $value;
 			}
 
